@@ -12,7 +12,8 @@ app.get('/api', function(req, res){
     res.json({
         message: "Welcome to the JWT API",
         "Generate JWT Token": "Hit a post request to " + req.hostname + "/api/login",
-        "Verify JWT Token": "Hit a post request to " + req.hostname + "/api/verifyJwtToken by passing Authorization as Bearer Token and pass the genereted auth token with this"
+        "Verify JWT Token": "Hit a post request to " + req.hostname + "/api/verifyJwtToken by passing Authorization as Bearer Token and pass the genereted auth token with this",
+        "More Information" : "Check Readme file https://github.com/ddevashish/JWT-DEMO#readme"
     });
 });
 
