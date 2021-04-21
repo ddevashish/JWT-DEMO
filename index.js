@@ -11,7 +11,8 @@ app.set('port', PORT);
 app.get('/api', function(req, res){
     res.json({
         message: "Welcome to the JWT API",
-        "Generate JWT Token": "Hit a post request to " + req.hostname + "/api/login"
+        "Generate JWT Token": "Hit a post request to " + req.hostname + "/api/login",
+        "Verify JWT Token": "Hit a post request to " + req.hostname + "/api/verifyJwtToken by passing Authorization as Bearer Token and pass the genereted auth token with this"
     });
 });
 
@@ -20,7 +21,7 @@ app.post('/api/login', (req, res) => {
     const user = {
         id : 1,
         username: "Dev",
-        email: "debashish@gmail.com"
+        email: "ddevashish.das@gmail.com"
     };
     
     // Generate and return auth token using user object and secret key
