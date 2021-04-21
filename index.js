@@ -1,11 +1,14 @@
+require('dotenv').config();
 var express = require('express');
 var jwt = require('jsonwebtoken');
+
 
 const app = express();
 const SECRETKEY = process.env.SECRETKEY || "my_secret_key";
 const JWT_EXPIRESIN = process.env.JWT_EXPIRESIN || "30s"
 const PORT  = process.env.PORT || 3000;
 const APPNAME = process.env.APPNAME || "JWT Test API";
+
 app.set('port', PORT);
 
 // Default open API to check whether our application is working
