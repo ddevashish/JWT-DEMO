@@ -4,13 +4,25 @@ This is test JWT application to generate and verify auth tokens.
 
 ## API
 
+JWT-Demo applicaiton is offering below API(s).
+
+### /api
+
+https://jwt-demo1.herokuapp.com/api
+
+General API to show the details about other APIs and how to use them
+
 ### /api/login
+
+https://jwt-demo1.herokuapp.com/api/login
 
 To generate JWT Token Hit a post request to the api end point /api/login.
 
 ![image](/img/generate-jwt-token.png)
 
-### /api/verifyJwtToken/
+### /api/verifyJwtToken
+
+https://jwt-demo1.herokuapp.com/api/verifyJwtToken
 
 To verify JWT Token Hit a post request to the api end point /api/verifyJwtToken by passing Authorization as Bearer Token and pass the genereted auth token with this.
 
