@@ -5,12 +5,13 @@ const app = express();
 const SECRETKEY = process.env.SECRETKEY || "my_secret_key";
 const JWT_EXPIRESIN = process.env.JWT_EXPIRESIN || "30s"
 const PORT  = process.env.PORT || 3000;
+const APPNAME = process.env.APPNAME || "JWT Test API";
 app.set('port', PORT);
 
 // Default open API to check whether our application is working
 app.get('/api', function(req, res){
     res.json({
-        message: "Welcome to the JWT API",
+        message: "Welcome to the " + APPNAME,
         "Generate JWT Token": "Hit a post request to " + req.hostname + "/api/login",
         "Verify JWT Token": "Hit a post request to " + req.hostname + "/api/verifyJwtToken by passing Authorization as Bearer Token and pass the genereted auth token with this",
         "More Information" : "Check Readme file https://github.com/ddevashish/JWT-DEMO#readme"

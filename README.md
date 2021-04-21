@@ -28,6 +28,10 @@ To verify JWT Token Hit a post request to the api end point /api/verifyJwtToken 
 
 ![image](/img/verify-jwt-token.png)
 
+### Token Expire In
+
+This token is set to expires in 30 seconds only
+
 ## Developers
 
 If you want to run the latest code from git, here's how to get started:
