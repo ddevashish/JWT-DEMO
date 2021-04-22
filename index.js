@@ -12,7 +12,7 @@ const APPNAME = process.env.APPNAME || "JWT Test API";
 app.set('port', PORT);
 
 // Default open API to check whether our application is working
-app.get('/api', function(req, res){
+app.get('/', function(req, res){
     res.json({
         message: "Welcome to the " + APPNAME,
         "Generate JWT Token": "Hit a post request to " + req.hostname + "/api/login",
